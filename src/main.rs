@@ -2,6 +2,8 @@
 // mod vars;
 mod types;
 
+// To setup the cargo framework run
+// cargo init
 // To run the code put the following in the terminal
 // cargo run
 // For a release build do
