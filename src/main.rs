@@ -1,6 +1,7 @@
 // mod print;
 // mod vars;
-mod types;
+// mod types;
+mod strings;
 
 // To setup the cargo framework run
 // cargo init
@@ -12,5 +13,6 @@ fn main() {
     // println!("Hello, world!");
     // print::run();
     // vars::run();
-    types::run();
+    // types::run();
+    strings::run();
 }
