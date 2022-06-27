@@ -20,4 +20,10 @@ pub fn run(){
     // since we use std::mem we can just write "mem::"
     // println!("Array occupies {} bytes", std::mem::size_of_val(&numbers));
     println!("Array occupies {} bytes", mem::size_of_val(&numbers));
+
+    // Get Slice
+    // Slice: [1, 2]
+    let slice: &[i64] = &numbers[0..2];
+    println!("Slice: {:?}", slice);
+
 }
