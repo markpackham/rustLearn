@@ -4,11 +4,16 @@
 pub fn run(){
     let prim = "I am a primative string";
 
-    // variable does not need to be mutable
-    let hello = String::from("Hello I am mutable and live in the heap");
+    let mut hello = String::from("Hello I am mutable and live in the heap ");
 
     // Get length
     println!("Length: {}", hello.len());
+
+    // Push char
+    hello.push('Z');
+
+    // Push string
+    hello.push_str(" more stuff can be added with strings vs chars");
 
     println!("{} you can never change me", prim);
     println!("{}", hello);
