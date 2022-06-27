@@ -2,7 +2,8 @@
 // mod vars;
 // mod types;
 // mod strings;
-mod tuples;
+// mod tuples;
+mod arrays;
 
 // To setup the cargo framework run
 // cargo init
@@ -16,5 +17,6 @@ fn main() {
     // vars::run();
     // types::run();
     // strings::run();
-    tuples::run();
+    // tuples::run();
+    arrays::run();
 }
