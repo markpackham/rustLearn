@@ -15,6 +15,18 @@ pub fn run(){
     // Push string
     hello.push_str(" more stuff can be added with strings vs chars");
 
+    // Capticy in bytes it can store
+    println!("Capacity: {} bytes", hello.capacity());
+
+    // Check if String is empty
+    println!("Is Empty: {}", hello.is_empty());
+
+    // Replace
+    println!("Replace: {}", hello.replace("Hello","Meow"));
+
+    // Contains
+    println!("Contains 'Hello' {}", hello.contains("Hello"));
+
     println!("{} you can never change me", prim);
     println!("{}", hello);
 
