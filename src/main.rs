@@ -1,4 +1,6 @@
 mod print;
+mod vars;
+mod types;
 
 // To run the code put the following in the terminal
 // cargo run
@@ -6,5 +8,7 @@ mod print;
 // cargo build --release
 fn main() {
     // println!("Hello, world!");
-    print::run();
+    // print::run();
+    // vars::run();
+    types::run();
 }
