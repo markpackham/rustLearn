@@ -1,5 +1,5 @@
-mod print;
-mod vars;
+// mod print;
+// mod vars;
 mod types;
 
 // To run the code put the following in the terminal
