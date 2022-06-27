@@ -6,6 +6,9 @@ pub fn run(){
 
     let mut hello = String::from("Hello I am mutable and live in the heap ");
 
+    println!("{} you can never change me", prim);
+    println!("{}", hello);
+
     // Get length
     println!("Length: {}", hello.len());
 
@@ -15,7 +18,7 @@ pub fn run(){
     // Push string
     hello.push_str(" more stuff can be added with strings vs chars");
 
-    // Capticy in bytes it can store
+    // Capticy in bytes
     println!("Capacity: {} bytes", hello.capacity());
 
     // Check if String is empty
@@ -27,7 +30,22 @@ pub fn run(){
     // Contains
     println!("Contains 'Hello' {}", hello.contains("Hello"));
 
-    println!("{} you can never change me", prim);
-    println!("{}", hello);
+    hello = String::from("Hello World changed");
+
+    // Loop through String by whitespace
+    for word in hello.split_whitespace(){
+        println!("{}", word);
+    }
+
+    // Create string with capacity
+    let mut stringy = String::with_capacity(10);
+    stringy.push('a');
+    stringy.push('b');
+
+    // Assertion testing (only shows error if it fails)
+    assert_eq!(2, stringy.len());
+    assert_eq!(10, stringy.capacity());
+
+    println!("{}", stringy);
 
 }
