@@ -7,4 +7,10 @@ pub fn run() {
 
     // Positional Arguments
     println!("{0} is from {1} and {0} likes to {2}", "Billy", "London", "dance");
+
+    // Named Arguments
+    println!("{name} likes to play {activity}", name = "Bob", activity = "drums");
+
+    // Placeholder traits
+    println!("Binrary: {:b} - Hex: {:x} - Octal: {:o}", 10, 10, 10);
 }
