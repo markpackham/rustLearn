@@ -7,6 +7,11 @@ pub fn run(){
     let get_sum: i32 = add(3,4);
 
     println!("Sum: {}", get_sum);
+
+    // Closure (we can use outside variables rather than just block scoped ones so n3 can be included)
+    let n3: i32 = 10;
+    let add_nums =  |n1:i32, n2:i32| n1 + n2 + n3;
+    println!("Closure Sum: {}", add_nums(1,2));
 }
 
 fn greeting(greet: &str, name: &str){
