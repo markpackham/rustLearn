@@ -30,6 +30,16 @@ impl Person {
     fn full_name(&self) -> String {
         format!("{} {}", self.first_name, self.last_name)
     }
+
+    // Set last name
+    fn set_last_name(&mut self, last: &str){
+        self.last_name = last.to_string();
+    }
+
+    // Name to tuple
+    fn to_tuple(self) -> (String, String){
+        (self.first_name, self.last_name)
+    }
 }
 
 pub fn run(){
@@ -53,4 +63,7 @@ pub fn run(){
     let mut per = Person::new("Billy","Bob");
     println!("{} {}", per.first_name, per.last_name);
     println!("{}", per.full_name());
+    per.set_last_name("Zenga-Zenga");
+    println!("{}", per.full_name());
+    println!("Person Tuple {:?}", per.to_tuple());
 }
